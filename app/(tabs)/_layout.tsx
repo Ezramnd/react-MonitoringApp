@@ -48,9 +48,16 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="dashboard"
         options={{
-          title: 'Tab Two',
+          title: 'Dashboard',
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="monitoring"
+        options={{
+          title: 'Monitoring',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
